@@ -1,0 +1,1 @@
+from abstract.repository import IRepository
