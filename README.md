@@ -20,6 +20,6 @@ Notes:
 Improvements:
 
 - handle non-happy path journeys (pydantic was used to check post req body responses but I would handle errors and HTTP responses in more detail
-- bucket/file versioning in cloud storage buckets to allow versionn control of templates
+- bucket/file versioning in cloud storage buckets to allow version control of templates
 - more indepth integration tests / unit tests converage
 - correct configuration of IAM policies and auth with google client SDK (currently points to local json files containing secrets)
