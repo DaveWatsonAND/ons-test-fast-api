@@ -3,7 +3,6 @@ from service import SurveyService
 
 from pydantic import BaseModel
 from typing import Any
-import json
 
 router = APIRouter()
 
