@@ -16,7 +16,6 @@ class SurveyService:
         self.template_repository = TemplateRepository()
 
     def start_survey(self, template_id, user_id):
-        print(template_id, user_id)
         template = self.template_repository.get(template_id)
         return self.repository.create(template, user_id, template_id)
 

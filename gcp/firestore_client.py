@@ -1,7 +1,6 @@
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
-import json
 
 cred = credentials.Certificate(
     "calm-inkwell-392109-firebase-adminsdk-nfgza-568e25399a.json"
@@ -35,5 +34,4 @@ class FireStoreClient:
         doc_ref = self.firestore_client.collection("surveys").document(user_id)
         form_ref = doc_ref.collection(template_id).document("data")
         data = form_ref.get()
-        print(data)
         return data.to_dict()
